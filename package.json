@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "pre-git": "^3.17.1",
+    "vuepress": "^0.8.4"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "commit": "commit-wizard"
+  },
+  "release": {
+    "analyzeCommits": "simple-commit-message"
+  },
+  "config": {
+    "pre-git": {
+      "commit-msg": "simple",
+      "pre-commit": [],
+      "pre-push": [],
+      "post-commit": [
+        "yarn docs:build",
+        "git add doc/.vuepress/dist"
+      ],
+      "post-checkout": [],
+      "post-merge": []
+    }
+  }
+}
