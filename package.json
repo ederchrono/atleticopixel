@@ -13,7 +13,10 @@
   },
   "config": {
     "pre-git": {
-      "pre-commit": []
+      "pre-commit": [
+        "chmod +x ./deploy.sh",
+        "./deploy.sh"
+      ]
     }
   }
 }
