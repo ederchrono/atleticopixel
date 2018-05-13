@@ -13,15 +13,10 @@
   },
   "config": {
     "pre-git": {
-      "commit-msg": "simple",
-      "pre-commit": [],
-      "pre-push": [],
-      "post-commit": [
+      "pre-commit": [
         "yarn docs:build",
-        "git add doc/.vuepress/dist"
-      ],
-      "post-checkout": [],
-      "post-merge": []
+        "git add docs/.vuepress/dist"
+      ]
     }
   }
 }
