@@ -1,5 +1,6 @@
 yarn run docs:build
 cd docs/.vuepress/dist
+echo 'atleticopixel.com' > CNAME
 git init
 git add -A
 git commit -m 'deploy'
