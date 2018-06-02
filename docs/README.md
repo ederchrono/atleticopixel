@@ -1,1 +1,4 @@
-# Atletico Pixel (in progress)
+# Atletico Pixel
+
+- Salvax
+- Eder
